@@ -90,16 +90,10 @@
         console.log('click');
       },
       addItem() {
-        console.log('Add item date:');
-        console.log(typeof(this.form.date));
-        console.log(this.form.date.toISOString().split('T')[0]);
+        const {date, name, state, city, address, zip} = this.form;
         const item = {
-          date: this.form.date.toISOString().split('T')[0],
-          name: this.form.name,
-          state: this.form.state,
-          city: this.form.city,
-          address: this.form.address,
-          zip: this.form.zip
+          date: date.toISOString().split('T')[0],
+          name, state, city, address, zip
         };
 
         // add a new itme to table data
