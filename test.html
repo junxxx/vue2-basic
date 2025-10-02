@@ -1,30 +1,22 @@
-<script setup lang="ts">
-import Sider from '@/components/Sider.vue'
-import Dashboard from '../components/Dashboard.vue';
-</script>
-
-<template>
-  <main class="main">
-    <el-row>
-      <el-col :span="6">
-        <Sider />
-      </el-col>
-      <el-col :span="18">
-      <el-row>
-        Tab/breadcrumb
-      </el-row>
-      <el-row>
-        <Dashboard />
-      </el-row>
-      <el-row>
-        Footer
-      </el-row>
-      </el-col>
-    <!-- <Sider/> -->
-
-    </el-row>
-  </main>
-</template>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="main">
+        <div class="menu">Menu</div>
+        <div class="container">
+            <div class="tab">Tab</div>
+            <div class="content">Content</div>
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+  </body>
+</html>
 
 <style>
     body {
@@ -33,10 +25,9 @@ import Dashboard from '../components/Dashboard.vue';
     }
     
     .main {
-        background-color: rgb(167, 167, 178);
+        background-color: darkblue;
         height: 100%;
         display: flex;
-        flex:1
     }
 
     .menu {
